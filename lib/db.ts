@@ -1,11 +1,11 @@
 import Database from 'better-sqlite3';
 
 export interface Expense {
-  id?: number;
-  category: string;
-  amount: number;
-  date: string;
-  description: string;
+    id?: number;
+    category: string;
+    amount: number;
+    date: string;
+    description: string;
 }
 
 const db = new Database('expenses.db');
