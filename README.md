@@ -1,3 +1,22 @@
+```bash
+Prompt:
+
+Build a small personal finance app called "Expense Tracker with Budget Insights".
+Requirements:
+
+Users can add, edit, delete, and fetch expenses via an /expenses REST API.
+Each expense has a category, amount, date, and description.
+Store all expenses in a database (choose SQLite or PostgreSQL for ease of use).
+Provide a monthly chart that summarizes category-wise spending; use a simple web frontend (React or plain HTML/JS) to visualize this.
+Integrate an AI-powered insights feature:
+Analyze spending trends and suggest budget improvements.
+Highlight unusual expenses or spending anomalies.
+Make the app simple and easy to run locally.
+Organize the code with clear separation of backend (API, database) and frontend (charts, insights).
+Please scaffold the project, including backend API, database models, and a basic frontend with charting. Add example code for budget analysis (trends/anomalies) using a simple ML or heuristic approach.
+
+```
+
 # Expense Tracker with Budget Insights
 
 A simple personal finance app built with Next.js, featuring expense tracking, budget insights, and data visualization.
