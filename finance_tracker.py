@@ -223,11 +223,32 @@ def main():
             # Add expense
             try:
                 amount = float(input("Enter amount: $"))
+                if amount <= 0:
+                    print("✗ Amount must be greater than zero.")
+                    continue
+                
                 category = input("Enter category (e.g., Food, Transport, Entertainment): ").strip()
+                if not category:
+                    print("✗ Category cannot be empty.")
+                    continue
+                
                 description = input("Enter description: ").strip()
+                if not description:
+                    print("✗ Description cannot be empty.")
+                    continue
+                
                 date_input = input("Enter date (YYYY-MM-DD) or press Enter for today: ").strip()
                 
-                date = date_input if date_input else None
+                # Validate date format if provided
+                date = None
+                if date_input:
+                    try:
+                        datetime.strptime(date_input, "%Y-%m-%d")
+                        date = date_input
+                    except ValueError:
+                        print("✗ Invalid date format. Please use YYYY-MM-DD format.")
+                        continue
+                
                 tracker.add_expense(amount, category, description, date)
             except ValueError:
                 print("✗ Invalid amount. Please enter a valid number.")
@@ -250,7 +271,15 @@ def main():
             # Save monthly expenses
             try:
                 year = int(input("Enter year (e.g., 2024): "))
+                if year < 1900 or year > 2100:
+                    print("✗ Please enter a reasonable year between 1900 and 2100.")
+                    continue
+                
                 month = int(input("Enter month (1-12): "))
+                if month < 1 or month > 12:
+                    print("✗ Month must be between 1 and 12.")
+                    continue
+                
                 tracker.save_monthly_report(year, month)
             except ValueError:
                 print("✗ Invalid year or month.")
