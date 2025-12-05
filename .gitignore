@@ -1,6 +1,7 @@
 # Personal Finance Tracker data files
 expenses.json
 expenses_*.json
+demo_expenses.json
 
 # Python
 __pycache__/
