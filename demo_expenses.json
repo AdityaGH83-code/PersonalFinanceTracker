@@ -1,0 +1,50 @@
+[
+  {
+    "amount": 50.0,
+    "category": "Food",
+    "description": "Grocery shopping",
+    "date": "2024-11-15"
+  },
+  {
+    "amount": 25.5,
+    "category": "Transport",
+    "description": "Taxi ride",
+    "date": "2024-11-20"
+  },
+  {
+    "amount": 75.0,
+    "category": "Entertainment",
+    "description": "Movie tickets",
+    "date": "2024-11-25"
+  },
+  {
+    "amount": 120.0,
+    "category": "Food",
+    "description": "Restaurant dinner",
+    "date": "2024-12-01"
+  },
+  {
+    "amount": 30.0,
+    "category": "Utilities",
+    "description": "Internet bill",
+    "date": "2024-12-02"
+  },
+  {
+    "amount": 45.0,
+    "category": "Transport",
+    "description": "Bus pass",
+    "date": "2024-12-03"
+  },
+  {
+    "amount": 200.0,
+    "category": "Shopping",
+    "description": "New shoes",
+    "date": "2024-12-04"
+  },
+  {
+    "amount": 15.0,
+    "category": "Food",
+    "description": "Coffee shop",
+    "date": "2024-12-05"
+  }
+]
